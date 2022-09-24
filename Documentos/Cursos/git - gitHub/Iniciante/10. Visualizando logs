@@ -1,0 +1,22 @@
+git log
+
+hash do commit : identificação
+
+git log --decorate
+
+	mais informações de branchs
+	
+pesquisar log por nome
+	git log --author="heverton"
+	
+mostra em ordem alfabetica quais foram os autores, quantos commits fizeram e quais eles foram
+	git shortlog
+	
+quantidade de commit e nome da pessoa
+	git shortlog -sn
+
+mostra o que ta acontecendo com as branch e as versões
+	git log --graph
+	
+idenfiticar modificações dos commits
+	git show 8ff8ae94f9ac05e48a2dc96904eeb2ae40dec8e6

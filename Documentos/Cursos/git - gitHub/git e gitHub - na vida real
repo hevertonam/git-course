@@ -1,0 +1,120 @@
+branch
+clicar na engrenagem e add nova branch
+
+ctrl + shift + P 
+digitar git bran
+
+source control 
+...
+push to
+
+puchar a atuliazação remota para o local
+
+==
+merge
+
+Esta atualizando sua branch pegando as coisas do master?
+
+use REBASE (PULL -- REBASE)
+
+> Terminou sua feature no branch e quer jogar para master?
+
+use merge
+
+definir upstream
+git branch --set-upstream-to=origin/master redesign-navbar -- determina de onde vai ficar atualizando a branch.. atualizar de acordo com a master
+
+onde tiver <branch> colocar master
+
+como reverter um codigo errado no master
+
+ir para master
+
+	git checkout master
+	
+git add .
+git commit -m "teste"
+git push origin master
+
+reverter
+	git revert
+
+ver o log
+	git log
+pegar a hash do commit
+
+	git revert 4357ad85c37c17424d7a7be78b8296a0a139164a
+	
+se tiver tudo certo
+	:wq
+	git push origin master
+
+o reverse não altera o historico
+
+
+tecnica que altera o historico
+
+git reset --hard 94d8ef3e9cba1260a22b1fbb8b89c16d7f6bebf4  -- exclui tudo que foi incluido
+
+git reset --soft 48621a7ddf947ceaadf80b9dbeb4516a5f8c3f5e  -- volta para o commit desejado mais todas as modificações ficam disponiveis na area de stage
+
+git reset // bom pra branches separadas
+git reverse // serve para o master
+
+error: failed to push some refs to 'git@github'
+ updates were rejected because te tip of your current branch is behind its remote counterpart. integrate the remote changes
+
+resolução
+	git push origin master --force
+	
+	 Updates were rejected because the remote contains work that you do
+ not have locally. This is usually caused by another repository pushing
+ to the same ref. You may want to first integrate the remote changes
+ (e.g., 'git pull ...') before pushing again. 
+	
+resolução
+	git push force 
+	
+	
+https://www.youtube.com/watch?v=C88Bp_j0SqU&list=PLlAbYrWSYTiNqugqFFWWsgONJsmc3eMpg&index=14
+
+Como editar o ultimo commit
+
+	git commit --amend 
+apertar I para abrir modo insert 
+
+	alterar o texto desejado 
+	esc
+	:wq 
+
+tbm reescreve o codigo e a
+
+git show informa o que foi adicionado no ultimo commit 
+vermelho o que estava antes
+verde é o que foi alterado
+
+o amend só é util caso não seja enviado para o repositorio remoto com o push
+
+-----------------------
+Como pegar um commit especifico de um branch e colocar no main sem fazer merge - rebase
+
+	git checkout 'redesig-navbar'  -- mudar de branch
+	git checkout master
+	git cherry-pick d414b2a4d90b90859bce0eaa0734cc438107af1d -- esse hash seria de uma brand 
+
+	git checkout -  /volta para a branch que estava antes 
+	
+https://www.youtube.com/watch?v=OxN1hzLb9Uc&list=PLlAbYrWSYTiNqugqFFWWsgONJsmc3eMpg&index=16
+	
+-----------------------	
+
+ 
+
+
+
+
+	
+
+	
+
+

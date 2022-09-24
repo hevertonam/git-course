@@ -1,0 +1,172 @@
+git e github
+
+https://www.youtube.com/watch?v=_hZf1teRFNg&t=1766s
+
+git é um sistema de versionamento. ele controla versoes de um projeto,
+Gerenciar as versẽos. permite:
+	* Manter Historico;
+	* voltar versão;
+	* diferença de uma versão e outra
+	* trabalho em grupo
+	
+git hub - é um serviço on line de hospedagem de projetos gerenciados pelo git
+um tipo de serviço social de hospedagem de projetos 
+
+1 passo: Instalar o git na maquina:
+para verificar se já esta instalado abrir o terminal e digitar: git
+se não estiver instaldo:
+
+pesquisar: git scm / escolher SO / seguir processo instalação
+
+git --version 
+
+2 passo: configurar usuario no git
+
+git config --global user.name "Heverton Alves"
+
+git config --global user.email "hevertonam2018@gmail.com"
+
+colocar o email cadastrado no github se não tiver o cadastro clicar em sign up e cadastrar
+
+para conferir
+
+git config --list
+
+no windows precisa demarcar a opção de ocultar as extensoes
+
+3 passo: Configurar chave SSH para o Github
+SSH é um protocolo de comunicação de dados com segurança
+ideia basica é cadastrar quais PCS que podem acessar o gitHub no meu nome. Para isso fazer 2 passos:
+	3.1 Gerar uma chave SSH no seu computador
+	pesquisar google: github ssh
+	localizar gerar nova chave ssh
+	seguir instruçoes 
+	
+	3.2 Cadastrar essa chave no seu gitHub 
+	
+	https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+	
+	
+passo a passo para salvar o primeiro projeto no Github
+
+Abrir pasta do projeto desejado
+	cursos/NodeJS/automovel
+	
+criar repositorio	
+	git init 
+
+salvar versao
+	git add . 
+		(envia para area temporaria chamada stage - local onde coloca os arquivos que quero salvar na prox versao) 
+		comando git status (ver status do 	projeto) 
+	
+Comando para salvar uma nova versão no git
+	git commit -m "Criado"
+
+antigamente o git usava o nome master para garantir que sera o nome main no projeto 
+	
+	git branch -M main
+			
+Enviar para gitHub o primeiro passo é criar um projeto no gitHub / 
+
+	botão new / Repository name / deixar como public / CLICAR botao create repository 
+
+assossiar o projeto que esta no pc com o projeto do github para fazer envio de um projeto para outro. 
+quado cria um repositorio o git da o comando pronto 
+prestar atenção: precisa ser SSH
+
+	git remote add origin git@github.com:hevertonam/projetoAutomovel.git
+	
+enviar para o gitHub
+	
+	git push -u origin main
+	git push -u origin 'main'	
+ 
+
+
+
+gerar chave de acesso
+github \ perfil \ setting \ SSH and GPG Keys \ add \ 
+
+terminal
+	sudo apt install openssh-client 
+	ssh-keygen -t rsa -C hevertonam2018@gmail.com
+	
+
+
+
+git remote add origin git@github.com:
+vai gerar com o nome id_rsa / enter pra confirmar
+deixar sem senha
+vai gerar
+vai estar na pasta home
+/home/heverton/ .ssh/id_rsa.pub
+
+ls .ssh
+cat .ssh/id_rsa.pub ( vai mostrar a chave de acesso )
+copia a chave e cola no github
+
+para testar usar 
+	ssh -T git@github.com
+	
+	
+Salvar uma nova versão
+	
+	git status
+	git add . 
+se tiver modificações vai informar: changes to be committed
+se ficar verde é pq esta na area de stage
+se ficar vermelho não esta na area de stage
+
+	git commit -m "inserindo dados do upload no banco de dados"
+	git commit -m "Criando a documentação de criação de categoria"
+
+
+no vsc no menu source control, vai mostrar a lista de modificações
+se clicar no arquivo o vsc vai mostrar a diferença de antes e depois
+
+	verde = incluido nova linha
+	vermelho = o que foi removido
+	
+enviar modificação para o gitHub
+	
+	git push
+	
+	
+https://github.com/hevertonam/projetoAutomovel/commits/main 
+
+alterar o local do commit:
+
+
+git remote set-url origin <coloque-o-nome-da-nova-url>
+
+git remote set-url origin git@github.com:hevertonam/RENTX.git
+
+git remote -v
+
+
+
+comandos avançados
+https://www.youtube.com/watch?v=_Why5uCCrXc&list=PLlAbYrWSYTiNqugqFFWWsgONJsmc3eMpg
+
+
+listar arquivos ocultos ls-lha
+
+remover historico do git
+	rm -rf .git
+	
+ddd-bdd-mongodb-impl
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	

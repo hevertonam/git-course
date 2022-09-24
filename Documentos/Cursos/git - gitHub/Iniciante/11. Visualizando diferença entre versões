@@ -1,0 +1,28 @@
+git status
+
+
+adiciona uma nova linha com msg
+	git diff
+
+apenas o nome que foi modificado. não funciona se tiver na area de stage
+
+	git diff --name-only
+	
+arquivo que já existiu
+	git commit -am "edit" 
+	
+desfazer alteração do commit	- retorna para antes da edição
+	git checkout nome_do_arquivo 
+
+quando for add na area de stage para voltar antes da edição 
+	git reset HEAD nome_arquivo  -- Quero voltar para antes da edição, remover do stage
+
+git 
+	soft - pega as modificações, vai voltar o commit que foi feito, mas o arquivo continua em stage com a modificação prontra pra ser comitada
+	mixed - mata o commit e volta o arquivo para antes do stage, 
+	hard - ignora commit anterior e tudo que foi feito
+	
+	
+	
+
+

@@ -1,0 +1,12 @@
+
+
+ssh protocolo que serve para autenticar usuario 
+chave publica
+chave privada
+
+envia a chave public (gitHub) com a chave privada na maquina é capaz de abrir a chave publica do servidor
+
+diretorio do ssh 
+	cd ~/.ssh
+
+

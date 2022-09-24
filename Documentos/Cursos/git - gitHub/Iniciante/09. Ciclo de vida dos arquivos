@@ -1,0 +1,17 @@
+ciclo de vida dos status dos arquivos
+
+4 estagios
+
+	untracked - não marcado. foi add no repo mas ainda não foi visto pelo git
+	unmodified - depois de add no git ele fica como não modificado  
+	modified - 
+	staged - depois de modificado fica na area de staged - fica la pra informar quando fizer o commit, criar a versão/hash 
+	todos arquivos ficam untracked
+	
+git status - reporta como esta no momento
+
+git add
+
+git commit -m "teste"
+
+

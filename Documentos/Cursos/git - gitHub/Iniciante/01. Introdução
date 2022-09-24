@@ -1,0 +1,45 @@
+https://www.youtube.com/watch?v=IBClN6VpJDw&list=PLlAbYrWSYTiPA2iEiQ2PF_A9j__C4hi0A
+
+
+
+06. Configurando o Git - Git e Github para Iniciantes
+
+
+conf usuario
+git config --global user.name "heverton Alves"
+
+conf email
+git config --global user.email "hevertonam2018@gmail.com"
+
+conf editor do git
+git config --gloabal core.editor vine por default 
+
+info do git
+git config --list 
+
+07. Inicializando um repositório - Git e Github para iniciantes
+
+criar pasta projetos
+
+mkdir git-course
+
+cd git-course
+
+inicializar repositorio 
+git init
+
+listar diretorios ocultos
+ls -la
+
+dentro da pasta .git tem
+	head - branche padrão
+	branches - quais branches existente
+	config
+	description 
+	hooks - gatilhos para certas ações
+	info
+	objecs
+	
+	
+	refs
+
